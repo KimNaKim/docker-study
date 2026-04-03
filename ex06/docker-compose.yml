@@ -1,17 +1,21 @@
-# 실행할 컨테이너
-services:   # 서비스들을 정의
-  app1: #이름
-    ports:  #포트
-      - 8000:80
-    build:  # 빌드 설정
+services:
+  app1:
+    build:
       context: ./app1
+    networks:
+      - mynetwork
   app2:
-    ports:
-      - 9000:80
     build:
       context: ./app2
+    networks:
+      - mynetwork
   lb:
     ports:
       - 80:80
     build:
       context: ./lb
+    networks:
+      - mynetwork
+
+networks:
+  mynetwork:
