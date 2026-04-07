@@ -4,6 +4,7 @@ metadata:
   name: frontend-service
   namespace: metacoding
 spec:
+  type: ClusterIP
   selector:
     app: frontend
   ports:

@@ -18,5 +18,5 @@ spec:
           envFrom:
             - configMapRef:
                 name: configmap-conn         # ConfigMap 연결
-            - secretRef:
-                name: secret-password        # Secret 연결
+#            - secretRef:
+#                name: secret-password        # Secret 연결

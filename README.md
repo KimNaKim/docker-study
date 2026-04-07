@@ -13,3 +13,5 @@
 ### ex07 : spring server + mysql db + front
 
 ### ex08 : minikube 배포
+
+### yaml : 챕터 3 리소스 실습

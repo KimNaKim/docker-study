@@ -4,6 +4,7 @@ metadata:
   name: db-service
   namespace: metacoding
 spec:
+  type: ClusterIP
   selector:
     app: db
   ports:

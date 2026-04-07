@@ -4,6 +4,7 @@ metadata:
   name: backend-service
   namespace: metacoding
 spec:
+  type: ClusterIP
   selector:
     app: backend
   ports:
